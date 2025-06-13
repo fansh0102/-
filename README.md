@@ -1,10 +1,7 @@
 1.ck-test 检测网卡性能，并打包性能报告到 clusterkit_results/YYYYMMDD_HHMMSS.tar.gz
-# 测试所有HCA设备
-./ck-test.sh
-# 测试特定的HCA设备（通过索引）
-./ck-test.sh 0,1,2,3
-# 测试单个HCA设备
-./ck-test.sh 0
+测试所有hca设备  ./ck-test.sh
+测试特定hca设备（通过索引）  ./ck-test.sh 0,1,2,3
+测试单个HCA设备   ./ck-test.sh 0
 
 2.core_to_hca_hgx100.sh将MPI进程绑定到特定的CPU核心，并为每个进程分配对应的ConnectX-7网卡，以优化NUMA（Non-Uniform Memory Access）性能。
 
